@@ -1,0 +1,3 @@
+To find Hello in the hello.txt =>
+cat > hello.txt
+cat hello.txt | grep Hello | wc -l

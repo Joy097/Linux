@@ -1,0 +1,4 @@
+Create a  txt file =>
+ cat > a.txt
+Show the line from 15-21 =>
+awk 'FNR==15|| FNR==16||FNR==17||FNR==18||FNR==19||FNR==20||FNR==21' a.txt 

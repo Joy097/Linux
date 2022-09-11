@@ -1,0 +1,4 @@
+First go to a directory using =>
+ cd (directory name)
+Then the command to show the hidden files is =>  
+ls -a 

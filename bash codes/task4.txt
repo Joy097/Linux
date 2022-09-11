@@ -1,0 +1,3 @@
+Commands =>
+cat > firstone.txt
+ln firstone.txt second.txt
