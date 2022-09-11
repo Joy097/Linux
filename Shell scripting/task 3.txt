@@ -1,0 +1,17 @@
+!/bin/bash
+
+echo "please give a number"
+read x
+
+for(( i=2; i<=$x/2; i++ ))
+do
+
+if [ $(( $x % $i )) -eq 0 ]
+then
+        echo " $x is not a happy prime "
+exit
+fi
+
+done
+
+echo " $x is a happy prime "

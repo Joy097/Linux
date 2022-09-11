@@ -1,0 +1,36 @@
+!/bin/bash
+declare -a array
+
+echo "how many number do you want to give?"
+read x
+
+for((i=0; i<x; i++))
+do
+echo "please give a number"
+read array[i]
+done
+
+
+for(( i=0; i<x-1; i++ ))
+do
+  for(( j=i+1; j<x; j++ ))
+   do
+    a = ${array[$j]}
+    b = ${array[$i]}
+      if[ $a -lt $b ];
+        then 
+             s = ${array[$j]}
+             array[j] = ${array[$i]}
+             array[i] = $s
+       fi
+
+}
+
+done
+done
+
+for((i=0; i<x; i++))
+do
+echo ${array[$i]}
+
+done

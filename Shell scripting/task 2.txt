@@ -1,0 +1,31 @@
+!#/bin/bash
+echo "please give a number"
+read x
+
+r=$(($x % 4))
+f=$(($x % 5))
+j=$(($x % 10))
+q=$(($x % 6))
+
+if [ $r -ne 0 -a $f -ne 0 -a $j -eq 0 ];
+
+   then echo "Rasengan"
+
+
+
+elif [ $f -eq 0 -a $q -ne 0 ];
+
+   then echo " Oodama Rasengan"
+
+
+elif [ $f -ne 0 -a $q -eq 0 ];
+
+   then echo " Oodama Rasengan"
+
+
+
+elif [ $f -eq 0 -a $q -eq 0 ];
+
+
+   then echo "Rasen Shuriken"
+fi

@@ -1,0 +1,38 @@
+#!/bin/bash
+
+
+echo "please give first number"
+read a
+echo "please give second number"
+read b
+echo "please give third number"
+read c
+
+
+function sub(){
+   z=$(( $a - $b ))
+   echo "result of sub : $z "
+}
+
+function add(){
+   x=$(( $b + $c ))
+   echo "result of add : $x "
+}
+
+function multi(){
+   y=$(( $b * $c ))
+   echo "result of multi : $y "
+}
+
+
+if [ $a -gt $b ]; 
+   then sub
+fi
+
+if [ $c -lt $b ];
+   then add
+fi
+
+if [ $b -eq $c ];
+   then multi
+fi
